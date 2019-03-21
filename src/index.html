@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Binox Solver</title>
+    <meta name="description" content="A solver for the Binox application" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fafafa" />
+
+    <script src="js/app.js"></script>
+    <script src="//unpkg.com/binox-solver@1.0.3/dist/index.browser.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Binox Solver</h1>
+      <div class="pull-right">
+        <a href="https://github.com/hilts-vaughan/binox-solver" target="_blank"
+          >What is this?</a
+        >
+      </div>
+    </header>
+
+    <div class="solver-settings">
+      <div class="settings-row">
+        <label for="setting-width">Puzzle Size: </label>
+        <input id="setting-width" type="number" value="6" max="10" min="6" />
+      </div>
+
+      <div class="settings-row">
+        <button class="waves-effect waves-light btn" id="solve-button">Solve</button>
+        <button class="waves-effect waves-light btn" id="clear-button">Clear</button>
+      </div>
+    </div>
+
+    <div class="puzzle-container">
+      <table id="gameplay-table"></table>
+    </div>
+  </body>
+</html>
